@@ -61,8 +61,7 @@ def online():
     try:
        os.system("mpv %s"%(real_url))
     except:
-        os.system("pkg install mpv")
-        os.system("mpv %s"%(real_url))
+        print("请复制运行此条命令:'pkg install mpv'")
         
 
 
