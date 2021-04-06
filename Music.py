@@ -66,7 +66,6 @@ def online():
 
 
 def download():
-        print(real_url)
         down = requests.get(real_url)
         root = '/storage/emulated/0/%s.mp3'%(file_name)
         with open(root,'ab')as file:
