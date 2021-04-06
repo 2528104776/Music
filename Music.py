@@ -58,7 +58,12 @@ def parse():
         print("请求失败，检查歌曲名称重试。")
 
 def online():
-    os.system("mpv %s"%(real_url))
+    try:
+       os.system("mpv %s"%(real_url))
+    except:
+        os.system("pkg install mpv")
+        os.system("mpv %s"%(real_url))
+        
 
 
 def download():
