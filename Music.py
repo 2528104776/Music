@@ -1,10 +1,5 @@
 #!/usr/bin/python
 import urllib.parse,requests,re,os;
-try:
-    import requests
-except:
-    print('please wait...')
-    os.system("pip install requests -i https://pypi.tuna.tsinghua.edu.cn/simple")
 
 
 msg = input("在线模式:0,下载模式:1,请输入对应数字:")
